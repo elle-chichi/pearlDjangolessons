@@ -1,0 +1,26 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About</title>
+</head>
+<body>
+<a href="{% url 'my_home' %}">Home</a>
+<a href="{% url 'my_about' %}">About Us</a>
+<a href="{% url 'my_services' %}">Services</a>
+<a href="{% url 'my_blog' %}">Blog</a>
+<a href="{% url 'my_contact' %}">Contact</a>
+<a href="{% url 'my_testimonial' %}">Testimonials</a>
+
+<h2>About</h2>
+<P><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio necessitatibus nostrum repudiandae. Beatae dolore dolorum ducimus earum facilis nisi possimus quaerat reiciendis repellat velit! Eligendi impedit nisi sapiente sunt. Quos!</span></P>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim eveniet explicabo odio quisquam quo quod tempora ut voluptas voluptatum. Distinctio error et illum inventore iste, minus porro provident quia reiciendis.</p>
+<img src="{% static 'images/GIR Ladle.jpg'%}" alt="Ladle" width="400" height="300">
+
+</body>
+</html>

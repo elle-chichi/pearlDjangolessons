@@ -1,0 +1,25 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blog</title>
+</head>
+<body>
+<a href="{% url 'my_home' %}">Home</a>
+<a href="{% url 'my_about' %}">About</a>
+<a href="{% url 'my_services' %}">Services</a>
+<a href="{% url 'my_blog' %}">Blog</a>
+<a href="{% url 'my_contact' %}">Contacts</a>
+<a href="{% url 'my_testimonial' %}">Testimonials</a>
+<br>
+<h2>This is a blog Page</h2>
+<br>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores cum deserunt eius incidunt natus placeat porro quaerat quidem soluta ut. Blanditiis cum cumque illo impedit in molestias quisquam ratione vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores cum deserunt eius incidunt natus placeat porro quaerat quidem soluta ut. Blanditiis cum cumque illo impedit in molestias quisquam ratione vero.</p>
+<img src="{% static 'images/GIR-5PieceBundle-Navy-Lifestyle-003.jpg' %}" alt="Set" width="300" height="390">
+</body>
+</html>

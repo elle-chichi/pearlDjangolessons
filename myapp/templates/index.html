@@ -1,0 +1,32 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+</head>
+<body>
+<a href="{% url 'my_home' %}">Home</a>
+<a href="{% url 'my_about' %}">About Us</a>
+<a href="{% url 'my_services' %}">Services</a>
+<a href="{% url 'my_blog' %}">Blog</a>
+<a href="{% url 'my_contact' %}">Contact</a>
+<a href="{% url 'my_testimonial' %}">Testimonials</a>
+
+
+<h2>Welcome to Django</h2>
+
+<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias assumenda molestias numquam, quae quam reprehenderit sit velit voluptates? Accusantium magni, unde. Aliquam consequuntur exercitationem laudantium magnam omnis quasi similique velit.</span></p>
+<br>
+
+<img src="{% static 'images/GIR Flip 1.jpg'%}" alt="Flip" width="400" height="300">
+
+
+<br>
+
+</body>
+</html>
